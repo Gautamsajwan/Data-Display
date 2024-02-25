@@ -14,11 +14,12 @@ function Search({value, handleChange}: Props) {
   }
   return (
     <div className="max-w-7xl mx-3 xl:mx-auto mt-5 rounded-xl px-5 sm:px-3 pt-12 pb-16 flex bg-gradient-1 justify-center items-center">
-      <form onSubmit={handleSubmit} className="relative w-full sm:w-[500px] flex flex-col gap-2">
+      <form onSubmit={handleSubmit} className="w-full sm:w-[500px] flex flex-col gap-2">
         <label htmlFor="user" className="text-white font-bold font-spacemono pl-1 text-4xl">
-          Search User
+          <span className="relative">Search User
+          <Lottie animationData={animation1} className="w-12 absolute -top-2 -right-8 right rotate-[140deg]" loop={true} />
+          </span>
         </label>
-        <Lottie animationData={animation1} className="w-10 absolute right-14 xs:left-1/2 -top-2 rotate-[140deg]" loop={true} />
         <input
           type="text"
           id="user"

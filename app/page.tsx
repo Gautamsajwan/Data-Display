@@ -54,7 +54,7 @@ export default function Home() {
     <main className="min-h-screen mx-auto">
       <Search value={searchText} handleChange={handleSearchChange}/>
       <FilterOptions sortbyLikes={handleLikeFilter} sortbyJobs={handleJobsFilter} cancelFilter={cancelFilter}/>
-      <div className="max-w-7xl mx-3 xl:mx-auto bg-[#d7dce2] px-3 py-3.5 rounded-xl gap-4 h-screen space-y-3 overflow-y-auto exceeding-dark">
+      <div className="max-w-7xl mx-3 xl:mx-auto bg-[#ced3d8] px-3 py-3.5 rounded-xl gap-4 h-screen space-y-3 overflow-y-auto exceeding-dark">
         {searchText ? (
           <RenderCards data={searchedResults} title="No search results found" />
         ) : (
